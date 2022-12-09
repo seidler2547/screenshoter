@@ -31,7 +31,11 @@ RUN apk --update add --no-cache \
         freetype-dev \
         harfbuzz \
         ca-certificates \
-        ttf-freefont terminus-font ttf-inconsolata ttf-dejavu font-noto font-noto-cjk ttf-font-awesome font-noto-extra && \
+        ttf-freefont terminus-font ttf-inconsolata ttf-dejavu font-noto-cjk ttf-font-awesome \
+        terminus-font font-bitstream-100dpi font-noto font-noto-extra font-arabic-misc \
+        font-misc-cyrillic font-mutt-misc font-screen-cyrillic font-winitzki-cyrillic font-cronyx-cyrillic \
+        font-noto-arabic font-noto-armenian font-noto-cherokee font-noto-devanagari font-noto-ethiopic font-noto-georgian \
+        font-noto-hebrew font-noto-lao font-noto-malayalam font-noto-tamil font-noto-thaana font-noto-thai && \
     addgroup -S pptruser && \
     adduser -S pptruser -G pptruser && \
     mkdir -p /home/pptruser/Downloads && \
